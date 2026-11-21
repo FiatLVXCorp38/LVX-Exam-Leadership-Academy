@@ -1,17 +1,35 @@
 # LVX Exam & Leadership Academy
 
-A clean, separate foundation for the new LVX academy brand.
+A browser-based New York county corrections learning center for entry and promotional candidates.
 
-## Current state
-- Independent project directory; not connected to or deployed from the former NY Study Hub.
-- Public-facing landing page communicates that the academy platform is in development.
-- No student accounts, payments, course content, or private data are included yet.
+## Learning paths
+- County Correction Officer — Entry
+- Correction Sergeant — Promotional
+- Correction Lieutenant — Promotional
+- Correction Captain — Promotional
+- Chief / Chief-level Command — Promotional
 
-## Next build phases
-1. Confirm the academy identity and visual system.
-2. Design the course catalog and student experience.
-3. Build authentication, enrollment, and 30-day access controls.
-4. Integrate payments and persistent student progress.
-5. Publish only after testing access controls and course content.
+All paths share the New York State Minimum Standards foundation. Each path adds role-appropriate study priorities. The current course structure is an instructional framework; exact tested subjects must always be checked against the applicable current examination announcement.
 
-The former study hub's source materials should be reviewed and selectively migrated into the new academy. Do not publish copyrighted or third-party prep material without confirming the right to use it.
+## Included
+- 38 Parts and 237 extracted minimum-standards sections from the supplied source compilation.
+- 209 numeric/timeframe excerpts surfaced by automated extraction; use the full section to verify context and exceptions.
+- Grammar, usage, punctuation, reading comprehension, and written-material training.
+- Teach-as-you-go practice, answer explanations, supervisory scenarios, weakness log, study planner, session history, and progress export.
+- Source Library containing supplied study guides, exam announcements, and reference documents.
+
+## Run locally
+Open `index.html` in a modern browser. No build step is required.
+
+## Publish
+Upload the contents of this folder to a GitHub repository and enable GitHub Pages from the `main` branch and root folder.
+
+## Progress and account security
+This is still a static prototype. Progress is stored in browser localStorage on the current device. It does not yet have student accounts, paid access, server-side progress sync, or content protection. Those are part of the next production build using a backend such as Supabase and payment processing such as Stripe.
+
+## Source integrity
+The minimum-standards text and excerpts are study aids based on supplied source documents, not legal advice or an independent update of current regulations. The numeric/timeframe index is not guaranteed exhaustive. Verify current official rules, amendments, and local policies. Some supplied guides are older and may not reflect current exam formats. Practice questions are original or adapted for learning and are not actual confidential examination questions. The supplied CSEA booklets carry copyright notices; this project links to user-provided source copies and does not reproduce their full contents as lessons.
+
+
+## Current public scope
+The active launch scope is New York State County Corrections only: Correction Officer Entry, Sergeant, Lieutenant, Captain, and Chief promotional preparation. New York Police, NYC Corrections, NYS Court Officers, New Jersey, and Pennsylvania are future divisions only and are not active courses.
