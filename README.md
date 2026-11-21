@@ -7,7 +7,7 @@ A browser-based New York county corrections learning center for entry and promot
 - Correction Sergeant — Promotional
 - Correction Lieutenant — Promotional
 - Correction Captain — Promotional
-- Chief / Chief-level Command — Promotional
+- Correction Chief — Promotional
 
 All paths share the New York State Minimum Standards foundation. Each path adds role-appropriate study priorities. The current course structure is an instructional framework; exact tested subjects must always be checked against the applicable current examination announcement.
 
@@ -17,6 +17,11 @@ All paths share the New York State Minimum Standards foundation. Each path adds 
 - Grammar, usage, punctuation, reading comprehension, and written-material training.
 - Teach-as-you-go practice, answer explanations, supervisory scenarios, weakness log, study planner, session history, and progress export.
 - Source Library containing supplied study guides, exam announcements, and reference documents.
+
+## Public landing page and academy entry
+The first page is the public LVX academy landing page. Visitors can review the academy overview and “Your Training Edge,” then select Enter Academy to open the learning-center interface. The academy interface includes a Public Home control to return to the landing page.
+
+**Important access-control limitation:** this navigation is a front-end presentation flow only. Because this version is a static website, it does not securely restrict course files or student access. Do not publish confidential, paid-only, or rank-restricted materials in this version. Before accepting students or payments, connect authentication and server-side authorization so administrators can grant access by student, course, and expiration date. Hiding a page or button in browser code is not security.
 
 ## Run locally
 Open `index.html` in a modern browser. No build step is required.
