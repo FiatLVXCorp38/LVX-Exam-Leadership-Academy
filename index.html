@@ -45,10 +45,6 @@
       </div>
       <p class="lvx-daily-note"><strong>Daily recommendation:</strong> Complete a practice session, review every missed question, and revisit weak topics the next day. Progress comes from consistent practice—not one perfect score.</p>
     </section>
-    <section class="lvx-sample">
-      <div><p class="public-kicker">TRY THE LVX APPROACH</p><h2>Sample question</h2><p>Original LVX-created practice item for demonstration. This is not an official examination question.</p></div>
-      <div class="lvx-sample-card"><p id="samplePrompt">A report lists four events by time. Which event occurred second?</p><div id="sampleChoices"><button onclick="checkSample(0)">A. 08:15 — Unit inspection</button><button onclick="checkSample(1)">B. 08:30 — Medical call</button><button onclick="checkSample(2)">C. 08:45 — Meal service</button><button onclick="checkSample(3)">D. 09:00 — Count completed</button></div><p id="sampleFeedback" role="status"></p><button class="ghost" onclick="resetSample()">Try again</button></div>
-    </section>
     <section class="public-scope lvx-scope"><div><p class="public-kicker">BUILT FOR CONSISTENT PREPARATION</p><h2>Knowledge. Repetition. Readiness.</h2><p>LVX combines structured lessons, practice testing, mistake review, and progress tracking in one focused learning environment. Course content and exam formats are developed separately for each pathway.</p></div><div class="scope-mark">LVX<small>LEARN • VERIFY • EXECUTE</small></div></section>
       </main>
     <section class="lvx-pricing" id="lvx-pricing">
@@ -88,26 +84,6 @@ const LVX_PREVIEWS={
 let lvxActiveSample=null;
 function showProgramPreview(key){const p=LVX_PREVIEWS[key],el=document.getElementById('programPreview');lvxActiveSample=key;el.hidden=false;el.innerHTML=`<div class="lvx-preview-head"><div><p class="public-kicker">PROGRAM DETAILS</p><h3>${p.title}</h3></div><button class="ghost" onclick="document.getElementById('programPreview').hidden=true">Close</button></div><p>${p.body}</p><h4>What your training experience is designed to include</h4><p>Lessons that explain the concept and why it matters, daily practice, answer explanations, missed-question review, fresh retests, and progress tracking as those features are implemented in the course.</p><div class="lvx-mini-question"><b>Preview question</b><p>${p.sample}</p><div>${p.choices.map((c,i)=>`<button class="lvx-answer-choice" onclick="answerPreview(${i})">${String.fromCharCode(65+i)}. ${c}</button>`).join('')}</div><p id="previewFeedback" role="status"></p></div><p class="disclaimer">Preview only. Course availability and enrollment are administered separately. Sample questions are original LVX demonstrations, not official exam items.</p>`;el.scrollIntoView({behavior:'smooth',block:'start'});}
 function answerPreview(i){const p=LVX_PREVIEWS[lvxActiveSample],f=document.getElementById('previewFeedback');if(!p||!f)return;const buttons=document.querySelectorAll('.lvx-mini-question .lvx-answer-choice');if(!buttons.length||Array.from(buttons).some(b=>b.disabled))return;buttons.forEach((b,index)=>{b.disabled=true;if(index===i)b.classList.add(index===p.answer?'correct':'wrong');if(index===p.answer)b.classList.add('correct');});const isCorrect=i===p.answer;f.innerHTML=`<div class="lvx-preview-feedback"><b>${isCorrect?'Correct.':'Review this one.'}</b><p>${p.why}</p><p><b>Correct answer:</b> ${String.fromCharCode(65+p.answer)}. ${p.choices[p.answer]}</p></div>`;}
-function checkSample(i){
-  const f=document.getElementById('sampleFeedback');
-  const choices=document.querySelectorAll('#sampleChoices button');
-  if(!f||!choices.length||Array.from(choices).some(b=>b.disabled))return;
-  const correctIndex=1;
-  choices.forEach((button,index)=>{
-    button.disabled=true;
-    if(index===i)button.classList.add(index===correctIndex?'correct':'wrong');
-    if(index===correctIndex)button.classList.add('correct');
-  });
-  f.innerHTML=i===correctIndex
-    ? '<strong>Correct.</strong> 08:30 is the second event in the sequence.'
-    : '<strong>Not quite.</strong> The correct answer is B. 08:30 — Medical call. The events are listed chronologically: 08:15, 08:30, 08:45, then 09:00.';
-}
-function resetSample(){
-  const f=document.getElementById('sampleFeedback');
-  const choices=document.querySelectorAll('#sampleChoices button');
-  if(f)f.textContent='';
-  choices.forEach(button=>{button.disabled=false;button.classList.remove('correct','wrong');});
-}
 </script>
 <section id="authGate" class="auth-gate hidden" aria-live="polite">
   <div class="auth-card">
