@@ -23,7 +23,112 @@
 .public-tracks h2{font-size:1.2rem;margin:14px 0 8px}.public-tracks p,.edge-grid p,.edge-heading>p:last-child,.public-scope p{margin:0;color:var(--pub-muted);font-size:.94rem}
 .training-edge{border-top:1px solid var(--pub-line);border-bottom:1px solid var(--pub-line);padding:75px 24px;background:#0b1626}
 .edge-heading{max-width:1120px;margin:0 auto 26px}.edge-heading h2,.public-scope h2{font-size:clamp(2rem,4vw,3rem);margin:0 0 10px;letter-spacing:-.035em}.edge-grid{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.edge-grid article{padding:22px}.edge-grid h3{font-size:1.05rem;margin:12px 0 7px}.edge-grid p{font-size:.88rem}
-.public-scope{max-width:1120px;margin:0 auto;padding:70px 24px;display:flex;align-items:center;justify-content:space-between;gap:30px}.public-scope>div:first-child{max-width:700px}.scope-mark{width:130px;height:130px;border:1px solid #876c37;border-radius:50%;display:grid;align-content:center;justify-items:center;color:var(--pub-gold);font-size:32px;font-weight:900;flex-shrink:0}.scope-mark small{font-size:7px;letter-spacing:.12em}.public-footer{border-top:1px solid var(--pub-line);padding:24px clamp(22px,7vw,100px);display:flex;justify-content:space-between;gap:20px;color:var(--pub-muted);font-size:.7rem;letter-spacing:.13em}
+.public-scope{max-width:1120px;margin:0 auto;padding:70px 24px;display:flex;align-items:center;justify-content:space-between;gap:30px}.public-scope>div:first-child{max-width:700px}.scope-mark{width:130px;height:130px;border:1px solid #876c37;border-radius:50%;display:grid;align-content:center;justify-items:center;color:var(--pub-gold);font-size:32px;font-weight:900;flex-shrink:0}.scope-mark small {
+    display: block;
+    width: 90px;
+    margin: 5px auto 0;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 7px;
+    letter-spacing: .08em;
+}.public-footer{border-top:1px solid var(--pub-line);padding:24px clamp(22px,7vw,100px);display:flex;justify-content:space-between;gap:20px;color:var(--pub-muted);font-size:.7rem;letter-spacing:.13em}
 .academy-shell .topbar{z-index:10}
 @media(max-width:800px){.edge-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:700px){.public-topbar{height:72px;padding:0 16px;gap:10px;font-size:.58rem}.public-brand{font-size:1.55rem}.public-enter{padding:8px 10px;font-size:.72rem}.public-hero{min-height:520px;padding-top:65px}.public-pillars{gap:10px;font-size:.66rem}.public-tracks{grid-template-columns:1fr;padding-bottom:55px}.edge-grid{grid-template-columns:1fr}.training-edge{padding:55px 20px}.public-scope{padding:55px 24px}.scope-mark{width:88px;height:88px;font-size:23px}.scope-mark small{font-size:5px}.public-footer{font-size:.58rem}}
+
+/* LVX secure access gate */
+.auth-gate{min-height:100vh;background:var(--pub-bg,#101827);color:#f4f0e7;display:grid;place-items:center;padding:28px 18px}.auth-gate.hidden{display:none}.auth-card{width:min(100%,460px);padding:38px;background:#172235;border:1px solid rgba(202,166,93,.35);border-radius:16px;box-shadow:0 24px 70px rgba(0,0,0,.3)}.auth-brand{display:inline-block;color:#d6b46b;font-size:2.1rem;font-weight:900;letter-spacing:.08em;text-decoration:none;margin-bottom:22px}.auth-card h1{font-size:2rem;margin:8px 0 10px}.auth-card>p:not(.eyebrow){color:#b8c0cc;line-height:1.55}.auth-card form{display:grid;gap:16px;margin-top:25px}.auth-card label{display:grid;gap:7px;color:#d9dce2;font-size:.88rem}.auth-card input{width:100%;box-sizing:border-box;padding:13px 14px;border-radius:8px;border:1px solid #45536a;background:#0f1929;color:#fff;font:inherit}.auth-card .primary{width:100%;margin-top:4px}.auth-message{min-height:24px;font-size:.88rem;color:#e5c77f}.auth-links{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:16px}.auth-links button{background:none;border:0;color:#d6b46b;text-decoration:underline;cursor:pointer;font:inherit;font-size:.82rem;padding:4px 0}
+.public-scope {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 35px;
+}
+
+.public-scope > div:first-child {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.scope-mark {
+    margin: 0 auto;
+}
+/* CENTER THE CURRENT ACADEMY PROGRAMS SECTION */
+#publicHome .public-scope {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 70px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+#publicHome .public-scope > div:first-child {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#publicHome .public-scope h2,
+#publicHome .public-scope p {
+    text-align: center;
+}
+
+#publicHome .public-scope .scope-mark {
+    margin: 0 auto;
+    flex-shrink: 0;
+}
+#publicHome .scope-mark {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#publicHome .scope-mark small {
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 4px;
+}
+
+/* LVX entry-program and daily-mastery public homepage additions */
+.lvx-programs{max-width:1180px;margin:0 auto;padding:72px 24px 78px}
+.lvx-program-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.lvx-program-card{background:var(--pub-panel);border:1px solid var(--pub-line);border-radius:12px;padding:28px;display:flex;flex-direction:column;min-height:100%}
+.lvx-program-card h3{font-size:1.35rem;margin:14px 0 10px;color:var(--pub-text)}
+.lvx-program-card p,.lvx-program-card li{color:var(--pub-muted);font-size:.92rem}
+.lvx-program-card ul{padding-left:19px;line-height:1.8;margin:12px 0 22px}
+.lvx-preview-btn{margin-top:auto;border:1px solid var(--pub-gold);background:transparent;color:var(--pub-gold);border-radius:5px;padding:12px 14px;font-weight:800;cursor:pointer}
+.lvx-preview-panel{max-width:900px;margin:26px auto 0;padding:28px;background:#101d30;border:1px solid #876c37;border-radius:12px;color:var(--pub-text)}
+.lvx-preview-head{display:flex;justify-content:space-between;gap:18px;align-items:center}.lvx-preview-head h3{margin:0 0 12px;font-size:1.4rem}.lvx-preview-panel p{color:var(--pub-muted)}
+.lvx-mini-question{border-top:1px solid var(--pub-line);margin-top:22px;padding-top:18px}.lvx-mini-question>div{display:grid;gap:8px}.lvx-mini-question button,.lvx-sample-card #sampleChoices button{background:#172840;color:var(--pub-text);border:1px solid #344761;border-radius:6px;padding:11px;text-align:left;cursor:pointer}
+.lvx-mini-question button:hover,.lvx-sample-card #sampleChoices button:hover{border-color:var(--pub-gold)}
+.lvx-daily-note{max-width:1120px;margin:26px auto 0;color:var(--pub-muted);font-size:.95rem}
+.lvx-sample{background:#0b1626;border-top:1px solid var(--pub-line);border-bottom:1px solid var(--pub-line);padding:70px max(24px,calc((100% - 1120px)/2));display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:center}
+.lvx-sample h2{font-size:clamp(2rem,4vw,3rem);margin:0 0 10px}.lvx-sample>div:first-child p:last-child{color:var(--pub-muted)}
+.lvx-sample-card{background:var(--pub-panel);border:1px solid var(--pub-line);border-radius:12px;padding:24px}.lvx-sample-card #sampleChoices{display:grid;gap:8px}.lvx-sample-card #sampleFeedback{color:var(--pub-gold);min-height:24px}
+.lvx-scope{max-width:1120px}
+@media(max-width:850px){.lvx-program-grid{grid-template-columns:1fr}.lvx-sample{grid-template-columns:1fr;padding:55px 24px}}
+
+/* Match the in-program practice exam answer feedback */
+.lvx-mini-question button.lvx-answer-choice.correct{border-color:var(--green);background:#153328;color:#e8fff5}
+.lvx-mini-question button.lvx-answer-choice.wrong{border-color:var(--red);background:#3a2228;color:#fff0f0}
+.lvx-mini-question button.lvx-answer-choice:disabled{cursor:default;opacity:1}
+.lvx-mini-question button.lvx-answer-choice:disabled:hover{border-color:inherit}
+.lvx-mini-question button.lvx-answer-choice.correct:disabled{border-color:var(--green)}
+.lvx-mini-question button.lvx-answer-choice.wrong:disabled{border-color:var(--red)}
+.lvx-preview-feedback{margin-top:12px;padding:14px;background:#0d1726;border-left:3px solid var(--blue);border-radius:5px;color:var(--pub-text)}
+.lvx-preview-feedback p{margin:7px 0 0;color:var(--pub-muted)}
+
+.lvx-sample-card #sampleChoices button.correct{border-color:var(--green);background:#153328;color:#e8fff5}.lvx-sample-card #sampleChoices button.wrong{border-color:var(--red);background:#3a2228;color:#fff0f0}.lvx-sample-card #sampleChoices button:disabled{cursor:default;opacity:1}.lvx-sample-card #sampleChoices button.correct:disabled{border-color:var(--green)}.lvx-sample-card #sampleChoices button.wrong:disabled{border-color:var(--red)}
