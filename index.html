@@ -1,37 +1,115 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101827"><title>LVX Exam &amp; Leadership Academy</title><link rel="stylesheet" href="style.css"></head><body>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101827"><title>LVX Exam &amp; Leadership Academy</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="website-integration/checkout.css"></head><body>
 <div id="publicHome" class="public-home">
   <header class="public-topbar">
     <a class="public-brand" href="#home" aria-label="LVX home">LVX</a>
     <div class="public-brand-name">EXAM &amp; LEADERSHIP ACADEMY</div>
-    <button class="public-enter" onclick="enterAcademy()">Enter Academy <span>→</span></button>
+    <button class="public-enter" onclick="enterAcademy()">Student Sign In <span>→</span></button>
   </header>
   <main id="home" class="public-main">
     <section class="public-hero">
-      <p class="public-kicker">ONLINE EXAM PREPARATION &amp; PROFESSIONAL DEVELOPMENT</p>
-      <h1>Prepare for the exam.<br><em>Develop the leader.</em></h1>
-      <p class="public-lead">Structured preparation for entry-level candidates and professionals pursuing their next rank.</p>
-      <div class="public-pillars"><span>ENTRY</span><i></i><span>PROMOTION</span><i></i><span>COMMAND</span></div>
-      <button class="public-cta" onclick="enterAcademy()">Enter the Academy <span>→</span></button>
-      <p class="public-access-note">Programs and learning materials are made available by academy administration.</p>
+      <p class="public-kicker">ENTRY-LEVEL PUBLIC SAFETY EXAM PREPARATION</p>
+      <h1>Prepare with purpose.<br><em>Practice until mastery.</em></h1>
+      <p class="public-lead">Structured exam preparation built around clear instruction, daily testing, deliberate review, and repeated practice.</p>
+      <div class="public-pillars"><span>LEARN</span><i></i><span>TEST</span><i></i><span>REVIEW</span><i></i><span>RETEST</span></div>
+      <a class="public-cta" href="#programs">Explore Entry Programs <span>↓</span></a>
+      <p class="public-access-note">Course access is assigned by academy administration after enrollment.</p>
     </section>
-    <section class="public-tracks" aria-label="Academy pathways">
-      <article><span class="public-number">01</span><h2>Entry Preparation</h2><p>Build the foundational knowledge, confidence, and test-taking skills needed to pursue a career in public safety.</p></article>
-      <article><span class="public-number">02</span><h2>Promotional Exams</h2><p>Prepare for the knowledge, judgment, and responsibilities expected at the next rank.</p></article>
-      <article><span class="public-number">03</span><h2>Leadership Development</h2><p>Strengthen communication, supervision, decision-making, and command-level thinking.</p></article>
+    <section id="programs" class="lvx-programs">
+      <div class="edge-heading"><p class="public-kicker">ENTRY-LEVEL PROGRAMS</p><h2>Choose your path.</h2><p>Three distinct preparation tracks. Each is designed around the exam pathway it serves.</p></div>
+      <div class="lvx-program-grid">
+        <article class="lvx-program-card"><span class="public-number">01 / CORRECTIONS</span><h3>Correction Officer Entry</h3><p>Build foundational knowledge and written-test skills for New York State county correction officer opportunities, including preparation using updated NYS Minimum Standards for Management of County Jails.</p><ul><li>Updated NYS Minimum Standards for Management of County Jails</li><li>Key Parts, sections, numbers, and timeframes</li><li>Reading, written material, grammar, usage, and punctuation</li><li>Correctional concepts and daily practice drills</li></ul><button class="lvx-preview-btn" onclick="showProgramPreview('corrections')">View program preview</button></article>
+        <article class="lvx-program-card"><span class="public-number">02 / LAW ENFORCEMENT</span><h3>Police Officer Entry</h3><p>Prepare for municipal and local law-enforcement entry examinations, including applicable Deputy Sheriff pathways.</p><ul><li>Language fluency and comprehension</li><li>Information ordering and sequencing</li><li>Reasoning and selective attention</li><li>Situational judgment practice</li></ul><button class="lvx-preview-btn" onclick="showProgramPreview('police')">View program preview</button></article>
+        <article class="lvx-program-card"><span class="public-number">03 / STATE POLICE</span><h3>NYS Trooper Entry</h3><p>A dedicated preparation track for the New York State Police Trooper examination and its distinct testing demands.</p><ul><li>Cognitive ability practice</li><li>Attention and reasoning exercises</li><li>Timed practice and review</li><li>Exam-readiness development</li></ul><button class="lvx-preview-btn" onclick="showProgramPreview('trooper')">View program preview</button></article>
+      </div>
+      <div id="programPreview" class="lvx-preview-panel" hidden aria-live="polite"></div>
     </section>
-    <section class="training-edge">
-      <div class="edge-heading"><p class="public-kicker">THE LVX DIFFERENCE</p><h2>Your Training Edge.</h2><p>Preparation built to help you understand the material, apply it, and retain it under pressure.</p></div>
+    <section class="public-scope lvx-standards-callout"><div><p class="public-kicker">CORRECTION OFFICER ENTRY PREPARATION</p><h2>Updated NYS Minimum Standards.</h2><p>Focused study of the New York State Minimum Standards for Management of County Jails, including Parts and sections, key numbers, timeframes, and correctional requirements—supported by lessons, practice questions, and repeated review.</p><p class="disclaimer">Study preparation only. Verify requirements against current official New York State sources and the examination announcement.</p></div><div class="scope-mark">NYS<small>MINIMUM STANDARDS</small></div></section>
+    <section class="training-edge lvx-mastery">
+      <div class="edge-heading"><p class="public-kicker">THE LVX DAILY MASTERY METHOD</p><h2>Repetition is the mother of learning.</h2><p>Testing is how knowledge becomes mastery. Don't study until you get it right once. Study until you can get it right consistently.</p></div>
       <div class="edge-grid">
-        <article><b>01 / Learn</b><h3>Structured Lessons</h3><p>Break complex material into organized lessons with clear explanations and practical examples.</p></article>
-        <article><b>02 / Apply</b><h3>Scenario-Based Thinking</h3><p>Connect rules and concepts to real supervisory and operational decisions.</p></article>
-        <article><b>03 / Verify</b><h3>Practice &amp; Exam Simulations</h3><p>Test your understanding with knowledge checks, practice questions, and timed exam-style drills.</p></article>
-        <article><b>04 / Improve</b><h3>Performance Tracking</h3><p>Identify weak areas, review mistakes, and focus study time where it matters most.</p></article>
+        <article><b>01 / LEARN</b><h3>Understand the concept</h3><p>Short lessons explain the rule, the reasoning behind it, and how to apply it.</p></article>
+        <article><b>02 / TEST</b><h3>Practice every day</h3><p>Use daily randomized questions to strengthen recall and apply knowledge in new contexts.</p></article>
+        <article><b>03 / REVIEW</b><h3>Study every mistake</h3><p>Review incorrect answers with explanations that show why the correct choice is right.</p></article>
+        <article><b>04 / RETEST</b><h3>Repeat until consistent</h3><p>Return to weak concepts and test again with a fresh set of questions.</p></article>
+      </div>
+      <p class="lvx-daily-note"><strong>Daily recommendation:</strong> Complete a practice session, review every missed question, and revisit weak topics the next day. Progress comes from consistent practice—not one perfect score.</p>
+    </section>
+    <section class="lvx-sample">
+      <div><p class="public-kicker">TRY THE LVX APPROACH</p><h2>Sample question</h2><p>Original LVX-created practice item for demonstration. This is not an official examination question.</p></div>
+      <div class="lvx-sample-card"><p id="samplePrompt">A report lists four events by time. Which event occurred second?</p><div id="sampleChoices"><button onclick="checkSample(0)">A. 08:15 — Unit inspection</button><button onclick="checkSample(1)">B. 08:30 — Medical call</button><button onclick="checkSample(2)">C. 08:45 — Meal service</button><button onclick="checkSample(3)">D. 09:00 — Count completed</button></div><p id="sampleFeedback" role="status"></p><button class="ghost" onclick="resetSample()">Try again</button></div>
+    </section>
+    <section class="public-scope lvx-scope"><div><p class="public-kicker">BUILT FOR CONSISTENT PREPARATION</p><h2>Knowledge. Repetition. Readiness.</h2><p>LVX combines structured lessons, practice testing, mistake review, and progress tracking in one focused learning environment. Course content and exam formats are developed separately for each pathway.</p></div><div class="scope-mark">LVX<small>LEARN • VERIFY • EXECUTE</small></div></section>
+      </main>
+    <section class="lvx-pricing" id="lvx-pricing">
+      <div class="lvx-pricing-inner">
+        <p class="lvx-pricing-kicker">LVX CORRECTIONS ACADEMY</p>
+        <h2>Choose Your Course and Access Period</h2>
+        <p>One-time payment. Each purchase unlocks only the selected correctional course.</p>
+        <label class="lvx-course-label" for="lvxCourseSelect">Correctional course</label>
+        <select id="lvxCourseSelect" class="lvx-course-select">
+          <option value="ENTRY">Correction Officer — Entry</option>
+          <option value="SERGEANT">Correction Sergeant — Promotional</option>
+          <option value="LIEUTENANT">Correction Lieutenant — Promotional</option>
+          <option value="CAPTAIN">Correction Captain — Promotional</option>
+          <option value="CHIEF">Correction Chief — Promotional</option>
+        </select>
+        <div class="lvx-plan-grid">
+          <article class="lvx-plan"><span>30 DAYS</span><strong>$59</strong><button onclick="LVXPayPal.choose(30)">Choose 30 Days</button></article>
+          <article class="lvx-plan lvx-plan-featured"><span>60 DAYS</span><strong>$79</strong><button onclick="LVXPayPal.choose(60)">Choose 60 Days</button></article>
+          <article class="lvx-plan"><span>90 DAYS</span><strong>$99</strong><button onclick="LVXPayPal.choose(90)">Choose 90 Days</button></article>
+        </div>
+        <p class="lvx-pricing-note">Secure PayPal checkout • No recurring subscription • Renewals add purchased days to your existing active expiration date.</p>
+        <p id="lvxPayPalMessage" role="status" aria-live="polite"></p>
       </div>
     </section>
-    <section class="public-scope"><div><p class="public-kicker">CURRENT ACADEMY PROGRAMS</p><h2>New York State County Corrections</h2><p>Entry and promotional preparation paths for County Correction Officer, Sergeant, Lieutenant, Captain, and Chief.</p></div><div class="scope-mark">LVX<small>ENTRY • PROMOTION • COMMAND</small></div></section>
-  </main>
-  <footer class="public-footer"><span>LVX EXAM &amp; LEADERSHIP ACADEMY</span><span>© 2026</span></footer>
+    <footer class="public-footer"><span>LVX EXAM &amp; LEADERSHIP ACADEMY</span><span>© 2026</span></footer>
 </div>
+<script>
+const LVX_PREVIEWS={
+ corrections:{title:'Correction Officer Entry — Program Preview',body:'A foundation-first pathway that includes updated New York State Minimum Standards for Management of County Jails. Study support focuses on the standards’ Parts and sections, important numbers and timeframes, and understanding how requirements apply in correctional settings. The pathway also covers reading comprehension, written material, grammar, usage, punctuation, and examination strategy. Always follow the current official source and the applicable exam announcement.',sample:'Original LVX sample: Which statement is written most clearly?',choices:['The officer completed the count before notifying the supervisor.','The count was completed by the officer before notification was made.','Before notifying, the count had been completed by the officer.','The officer, prior to notification, had completed the count.'],answer:0,why:'The first choice uses direct subject–verb–object construction and communicates the sequence clearly.'},
+ police:{title:'Police Officer Entry — Program Preview',body:'A distinct local law-enforcement entry pathway. Preparation may include language fluency, information ordering, reasoning, selective attention, visualization, spatial orientation, and situational judgment. Exact subjects depend on the specific examination announcement.',sample:'Original LVX sample: An officer receives three details and must identify the earliest event. What skill is being tested?',choices:['Information ordering','Punctuation','Mechanical knowledge','Memorization of policy numbers'],answer:0,why:'Putting events in chronological order is an information-ordering task.'},
+ trooper:{title:'NYS Trooper Entry — Program Preview',body:'A dedicated New York State Police Trooper preparation pathway. It will use its own lesson sequence and practice design rather than treating the Trooper exam as identical to local police examinations.',sample:'Original LVX sample: A timed task requires you to notice a changing detail while ignoring irrelevant information. Which ability is most directly involved?',choices:['Selective attention','Essay organization','Vocabulary recall','Arithmetic estimation'],answer:0,why:'Selective attention is the ability to focus on relevant information while filtering distractions.'}
+};
+let lvxActiveSample=null;
+function showProgramPreview(key){const p=LVX_PREVIEWS[key],el=document.getElementById('programPreview');lvxActiveSample=key;el.hidden=false;el.innerHTML=`<div class="lvx-preview-head"><div><p class="public-kicker">PROGRAM DETAILS</p><h3>${p.title}</h3></div><button class="ghost" onclick="document.getElementById('programPreview').hidden=true">Close</button></div><p>${p.body}</p><h4>What your training experience is designed to include</h4><p>Lessons that explain the concept and why it matters, daily practice, answer explanations, missed-question review, fresh retests, and progress tracking as those features are implemented in the course.</p><div class="lvx-mini-question"><b>Preview question</b><p>${p.sample}</p><div>${p.choices.map((c,i)=>`<button class="lvx-answer-choice" onclick="answerPreview(${i})">${String.fromCharCode(65+i)}. ${c}</button>`).join('')}</div><p id="previewFeedback" role="status"></p></div><p class="disclaimer">Preview only. Course availability and enrollment are administered separately. Sample questions are original LVX demonstrations, not official exam items.</p>`;el.scrollIntoView({behavior:'smooth',block:'start'});}
+function answerPreview(i){const p=LVX_PREVIEWS[lvxActiveSample],f=document.getElementById('previewFeedback');if(!p||!f)return;const buttons=document.querySelectorAll('.lvx-mini-question .lvx-answer-choice');if(!buttons.length||Array.from(buttons).some(b=>b.disabled))return;buttons.forEach((b,index)=>{b.disabled=true;if(index===i)b.classList.add(index===p.answer?'correct':'wrong');if(index===p.answer)b.classList.add('correct');});const isCorrect=i===p.answer;f.innerHTML=`<div class="lvx-preview-feedback"><b>${isCorrect?'Correct.':'Review this one.'}</b><p>${p.why}</p><p><b>Correct answer:</b> ${String.fromCharCode(65+p.answer)}. ${p.choices[p.answer]}</p></div>`;}
+function checkSample(i){
+  const f=document.getElementById('sampleFeedback');
+  const choices=document.querySelectorAll('#sampleChoices button');
+  if(!f||!choices.length||Array.from(choices).some(b=>b.disabled))return;
+  const correctIndex=1;
+  choices.forEach((button,index)=>{
+    button.disabled=true;
+    if(index===i)button.classList.add(index===correctIndex?'correct':'wrong');
+    if(index===correctIndex)button.classList.add('correct');
+  });
+  f.innerHTML=i===correctIndex
+    ? '<strong>Correct.</strong> 08:30 is the second event in the sequence.'
+    : '<strong>Not quite.</strong> The correct answer is B. 08:30 — Medical call. The events are listed chronologically: 08:15, 08:30, 08:45, then 09:00.';
+}
+function resetSample(){
+  const f=document.getElementById('sampleFeedback');
+  const choices=document.querySelectorAll('#sampleChoices button');
+  if(f)f.textContent='';
+  choices.forEach(button=>{button.disabled=false;button.classList.remove('correct','wrong');});
+}
+</script>
+<section id="authGate" class="auth-gate hidden" aria-live="polite">
+  <div class="auth-card">
+    <a class="auth-brand" href="#home">LVX</a>
+    <p class="eyebrow">SECURE ACADEMY ACCESS</p>
+    <h1 id="authTitle">Student Sign In</h1>
+    <p id="authIntro">Sign in to access the courses assigned to your account.</p>
+    <form id="authForm">
+      <label>Full name <input id="authName" type="text" autocomplete="name" placeholder="Full name" /></label>
+      <label>Email address <input id="authEmail" type="email" autocomplete="username" required placeholder="you@example.com" /></label>
+      <label>Password <input id="authPassword" type="password" autocomplete="current-password" required minlength="8" placeholder="At least 8 characters" /></label>
+      <button class="primary" id="authSubmit" type="submit">Sign In</button>
+    </form>
+    <p id="authMessage" class="auth-message" role="status"></p>
+    <div class="auth-links"><button type="button" id="authToggle">Create student account</button><button type="button" id="authBack">Return to homepage</button></div>
+  </div>
+</section>
 <div id="academyShell" class="academy-shell hidden">
 <header class="topbar"><div class="brand"><div class="mark">LVX</div><div><b>EXAM &amp; LEADERSHIP ACADEMY</b><small>Entry • Promotion • Command</small></div></div><div class="top-actions"><span id="streak">LOCAL PROGRESS</span><button class="ghost" onclick="returnHome()">Public Home</button><button class="ghost" id="exportBtn">Export Progress</button></div></header>
 <div class="layout"><aside class="sidebar"><div class="side-label">COMMAND</div><button class="nav active" data-view="dashboard">▦ Dashboard</button><button class="nav" data-view="learning">▣ Academy Programs</button><div class="side-label">MINIMUM STANDARDS</div><button class="nav" data-view="standards">§ All Parts & Sections</button><button class="nav" data-view="numbers">◷ Numbers & Timeframes</button><div class="side-label">WRITTEN EXAM</div><button class="nav" data-view="grammar">Aa Grammar</button><button class="nav" data-view="usage">⇄ Usage / Problem Words</button><button class="nav" data-view="punctuation">,; Punctuation</button><button class="nav" data-view="written">¶ Written Material</button><div class="side-label">TRAINING & PERFORMANCE</div><button class="nav" data-view="quiz">◎ Practice Exam</button><button class="nav" data-view="challenge">⚑ Supervisory Challenge</button><button class="nav" data-view="weakness">⌁ Weakness Log</button><button class="nav" data-view="plan">▤ Study Planner</button><div class="side-foot">LVX • LEARN / VERIFY / EXECUTE</div></aside>
@@ -47,4 +125,8 @@
 <section class="view" id="quiz"><div class="page-head"><div><div class="eyebrow">PERFORMANCE LAB</div><h1>Practice Exam</h1><p>Answers are recorded to build your personal weakness profile.</p></div></div><div class="panel quiz-setup" id="quizSetup"><h2>Configure your drill</h2><label>Question track<select id="quizTrack"><option value="mixed">Mixed exam</option><option value="standards">Minimum Standards</option><option value="grammar">Grammar</option><option value="usage">Usage</option><option value="punctuation">Punctuation</option><option value="written">Written Material</option><option value="challenge">Lieutenant's Challenge</option><option value="weakness">Review Missed Questions</option></select></label><label>Question count<select id="quizCount"><option>10</option><option>20</option><option>30</option><option>40</option><option>50</option></select></label><label>Mode<select id="quizMode"><option value="teach">Teach as I go</option><option value="exam">Exam simulation</option></select></label><button class="primary" onclick="startQuiz()">Begin Drill</button></div><div id="quizRun" class="panel hidden"></div><div id="quizResults" class="panel hidden"></div></section>
 <section class="view" id="challenge"><div class="page-head"><div><div class="eyebrow">SUPERVISORY APPLICATION</div><h1>Supervisory Challenge</h1><p>Apply written standards to operational decisions and supervisory scenarios.</p></div></div><div class="callout"><b>Method:</b> Identify the controlling section, isolate the trigger event, calculate the deadline, and distinguish immediate duties from routine reporting.</div><button class="primary" onclick="startQuiz('challenge')">Start Lieutenant's Challenge</button><div class="panel"><h2>Scenario focus</h2><p>Admissions control • incident reporting • death notifications • identification deadlines • RRU programming.</p></div></section><section class="view" id="weakness"><div class="page-head"><div><div class="eyebrow">AFTER-ACTION REVIEW</div><h1>Weakness Log</h1><p>Wrong answers, recurring patterns, and subjects needing more work.</p></div><button class="ghost" onclick="clearHistory()">Clear History</button></div><div id="weaknessStats" class="stats"></div><button class="primary" onclick="startQuiz('weakness')">Review My Missed Questions</button><div class="two-col"><div class="panel"><h2>Topics to Revisit</h2><div id="weakTopics"></div></div><div class="panel"><h2>Recent Mistakes</h2><div id="mistakes"></div></div></div></section>
 <section class="view" id="plan"><div class="page-head"><div><div class="eyebrow">TRAINING SCHEDULE</div><h1>Study Planner</h1><p>Track completed sessions, daily tasks, and notes.</p></div></div><div class="panel"><h2>Today's checklist</h2><div id="planChecks"></div><button class="primary" onclick="savePlan()">Save Today's Plan</button></div><div class="panel"><h2>Study notes</h2><textarea id="studyNotes" rows="5" placeholder="Rules, questions, or concepts to revisit…"></textarea><button class="primary" onclick="saveNotes()">Save Notes</button></div><div class="panel"><h2>Session history</h2><div id="sessionHistory"></div></div></section>
-</main></div></div><script>function enterAcademy(){document.getElementById("publicHome").classList.add("hidden");document.getElementById("academyShell").classList.remove("hidden");window.scrollTo(0,0)}function returnHome(){document.getElementById("academyShell").classList.add("hidden");document.getElementById("publicHome").classList.remove("hidden");window.scrollTo(0,0)}if(new URLSearchParams(window.location.search).get("view")==="academy"){enterAcademy()}</script><script src="data.js"></script><script src="app.js"></script></body></html>
+</main></div></div><script>function enterAcademy(){document.getElementById("publicHome").classList.add("hidden");document.getElementById("authGate").classList.remove("hidden");window.scrollTo(0,0)}function returnHome(){document.getElementById("academyShell").classList.add("hidden");document.getElementById("authGate").classList.add("hidden");document.getElementById("publicHome").classList.remove("hidden");window.scrollTo(0,0)}if(new URLSearchParams(window.location.search).get("view")==="academy"){enterAcademy()}</script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="auth.js"></script>
+<script src="website-integration/lvx-paypal-checkout.js"></script>
+</body>
+</html>
