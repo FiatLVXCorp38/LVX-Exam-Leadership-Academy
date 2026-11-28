@@ -221,7 +221,7 @@
         });
         if (error) throw error;
         if (!data.session) {
-          authMessage('Account created. Check your email to confirm your address. Then return here and sign in to purchase course access.');
+          authMessage('REGISTRATION SUCCESSFUL — Your LVX Academy account has been created. Before signing in, open the confirmation email and click the verification link. If you do not see the email, check your Spam or Junk folder. After confirming your email address, return to this page and sign in.');
         } else {
           await verifyAndEnter(data.user, { fromLogin: true });
         }
